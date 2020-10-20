@@ -110,6 +110,10 @@ main
 #about
   position: relative
   background-color: $lightGray
+  background-image: url("../img/bg-corner.png")
+  background-repeat: no-repeat
+  background-position: bottom right
+
   .avatar
     position: absolute
     height: 200px
@@ -147,9 +151,45 @@ main
         width: 50%
     .skill
       width: 100%
-      padding-left: 24px
+      padding: 100px 0 0 24px
       @include breakpoint($sm-up)
         width: 50%
+      .skill-list
+        .skill-list-item
+          display: flex
+          justify-content: flex-start
+          align-items: flex-start
+          margin-bottom: 16px
+          .skill-list-item-title
+            width: 120px
+            min-width: 120px
+          .skill-list-item-content
+            color: #666666
+            width: 100%
+            .content-item
+              display: flex
+              justify-content: flex-start
+              align-items: center
+              margin-bottom: 16px
+              .text
+                width: 80px
+              .bar
+                position: relative
+                width: 100%
+                max-width: 120px
+                height: 4px
+                background-color: #dddddd
+                border-radius: 5px
+                overflow: hidden
+                .bar-fill
+                  position: absolute
+                  width: 100%
+                  height: 4px
+                  background-color: #333333
+                  &.angular
+                    max-width: 60px
+                  &.vue
+                    max-width: 30px
 
 
 // == works =====
