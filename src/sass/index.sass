@@ -122,7 +122,7 @@ main
   .about-row
     padding: 180px 0
     .intro
-      width: 50%
+      width: 100%
       padding-right: 24px
       h2::after
         content: ""
@@ -135,9 +135,13 @@ main
       .intro-text
         color: #333333
         padding-top: 72px
+      @include breakpoint($sm-up)
+        width: 50%
     .skill
-      width: 50%
+      width: 100%
       padding-left: 24px
+      @include breakpoint($sm-up)
+        width: 50%
 
 
 // == works =====
