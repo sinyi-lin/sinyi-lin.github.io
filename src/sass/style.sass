@@ -122,7 +122,7 @@ header
     z-index: 30
     &:hover,&:active
       .line
-        background-color: $primeColor
+        background-color: $white8
     .line
       position: absolute
       left: 50%
@@ -162,6 +162,9 @@ header
       padding: 0 40px
   @include breakpoint($md-up)
     background-color: $primeColor
+    &.scrolled
+      nav .menu-list li a::before
+        background-color: $primeColor
   @include breakpoint($lg-up)
     .header-wrap
       padding: 0
