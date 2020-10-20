@@ -27,17 +27,17 @@ block content
     // == ABOUT =====
     article#about
       section.main-wrap
-        .avatar
+        .avatar.wow.rollIn(data-wow-duration="1.5s" data-wow-delay="0.3s" data-wow-offset="50")
           img.avatar-img(src='assets/img/sinyi-avatar.jpg' alt="Sinyi頭像")
         .row.about-row
           .intro
-            h2 LIN SIN YI
-            p.intro-text
+            h2.wow.bounceInUp(data-wow-duration="1s" data-wow-delay="0.3s") LIN SIN YI
+            p.intro-text.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
               | I was a product and project manager in online website, EC, O2O service,mobile App, RTLS solution. 
               br
               br
               | Have interest in web technologies, Front-enf development, UI/UX design, and become a front-end developer!
-          .skill
+          .skill.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             ul.skill-list
               li.skill-list-item
                 .skill-list-item-title Design
@@ -60,41 +60,12 @@ block content
                     .bar.bar-fill
                       .bar-fill.vue
 
-
-    // == SKILLS =====
-
-
-    //-         figcaption.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.5s")
-    //-           h4 CSS
-    //-           p Sass (Pre-processors) /
-    //-           p Bootstrap/
-    //-           p Media Query (RWD)/ Hack
-    //-       li.skill-content
-    //-         figure.wow.bounceIn(data-wow-duration="1s" data-wow-delay="0.5s")
-    //-           img(src='assets/img/icon-js.svg')
-    //-         figcaption.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.5s")
-    //-           h4 Javascript
-    //-           p JQuery/ VueJS/ AJAX
-    //-       li.skill-content
-    //-         figure.wow.bounceIn(data-wow-duration="1s" data-wow-delay="0.5s")
-    //-           img(src='assets/img/icon-git.svg')
-    //-         figcaption.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.5s")
-    //-           h4 Git
-    //-           p Version control/ Branch Manage
-    //-       li.skill-content
-    //-         figure.wow.bounceIn(data-wow-duration="1s" data-wow-delay="0.5s")
-    //-           img(src='assets/img/icon-plan.svg')
-    //-         figcaption.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.5s")
-    //-           h4 Project manage/ Plan
-    //-           p Product development/ Project management/ Software planning
-    //-           p Sofeware: Microsoft Office/ Axture RP/ Google Analytics
     // == WORKS =====
     article#works
       section.main-wrap
-        h3.title-hr
+        h3.title-hr.wow.bounceInUp(data-wow-duration="1s" data-wow-delay="0.3s")
           | WORKS
         ul
-          //左排
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             a(href='https://wallet.friday.tw/home/' target='_blank' title='遠傳Friday理財+')
               figure
@@ -119,8 +90,6 @@ block content
             .descript
               .tag WEB
               .descript-text 前端開發
-
-          // 右排
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             figure
               img(src='assets/img/works-iflow.jpg')
@@ -153,6 +122,81 @@ block content
             .descript
               .tag WEB
               .descript-text 前端開發
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              a(href='https://egoshop.atipd.tw/' target='_blank' title='部落e購官網/線上購物網站')
+                img(src='assets/img/works-eshop.jpg')
+            h4.title-text 部落e購官網
+            .descript
+              .tag WEB
+              .descript-text 專案管理/UX規劃/Wordpress網站建置/EC規劃
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              img(src='assets/img/works-love.jpg')
+            h4.title-text 台灣關愛基金會官方網站
+            .descript
+              .tag WEB
+              .descript-text 專案管理/UX規劃/Wordpress網站建置
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              a(href='http://www.xfuns.com.tw/' target='_blank' title='XFUNS 放肆創意設計網')
+                img(src='assets/img/works-xfuns.jpg')
+            h4.title-text XFUNS 放肆創意設計網
+            .descript
+              .tag WEB
+              .descript-text 專案管理/Wordpress網站建置/EC規劃
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              a(href='https://apc.atipd.tw/' target='_blank' title='台灣原住民部落活力發展資訊網')
+                img(src='assets/img/works-atipd.jpg')
+            h4.title-text 台灣原住民部落活力發展資訊網
+            .descript
+              .tag WEB
+              .descript-text 專案管理/UX規劃/Wordpress網站建置
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              img(src='assets/img/works-smart.jpg')
+            h4.title-text 原民智慧部落APP
+            .descript
+              .tag APP
+              .descript-text 專案管理/UX規劃
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              img(src='assets/img/works-taco.jpg')
+            h4.title-text tacoPay App
+            .descript
+              .tag APP
+              .descript-text 產品企劃/UX規劃/行銷
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              a(href='http://www.somarket.tw/orinature/' target='_blank' title='原生活Orinature EC網站')
+                img(src='assets/img/works-orinature.jpg')
+            h4.title-text 原生活Orinature EC網站
+            .descript
+              .tag WEB
+              .descript-text 專案管理/UX規劃/EC系統規劃
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              a(href='https://pingpu.atipd.tw/' target='_blank' title='台灣平埔族群聚落網')
+                img(src='assets/img/works-ping.jpg')
+            h4.title-text 台灣平埔族群聚落網
+            .descript
+              .tag WEB
+              .descript-text 專案管理/UX規劃/Wordpress網站建置
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              img(src='assets/img/works-shopmore.jpg')
+            h4.title-text SHOPMORE APP
+            .descript
+              .tag APP
+              .descript-text 專案管理
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              img(src='assets/img/works-phorus.jpg')
+            h4.title-text Phorus 
+            .descript
+              .tag WEB
+              .descript-text 專案管理/UX規劃/Wordpress網站建置
           //- li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
           //-   figure
           //-     img(src='assets/img/work-3.jpg')
