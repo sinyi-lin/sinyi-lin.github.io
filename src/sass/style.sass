@@ -90,12 +90,16 @@ header
   height: 60px
   z-index: 100
   transition: 0.6s
-  background-color: rgba(19,24,32,0)
+  background-color: $primeColor
+  // @include breakpoint($sm-up)
+  //     background-color: transparent
   .header-wrap
     max-width: 1040px
     height: 100%
     padding: 0 20px
     margin: 0 auto
+    
+
   .logo
     position: relative
     float: left
@@ -118,7 +122,7 @@ header
     z-index: 30
     &:hover,&:active
       .line
-        background-color: $light-blue
+        background-color: $primeColor
     .line
       position: absolute
       left: 50%
