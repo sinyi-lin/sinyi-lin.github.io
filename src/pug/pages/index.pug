@@ -11,8 +11,8 @@ block content
   main
     h1 LIN SIN YI PORTFOLIO 
 
-    // == MAIN =====
-    article#main
+    // == Visual =====
+    article#visual
       section
         .bg-circles
         .circle-block
@@ -98,51 +98,66 @@ block content
     //-           p Sofeware: Microsoft Office/ Axture RP/ Google Analytics
     // == WORKS =====
     article#works
-      section.main-wrap
-        h3
+      section.main-wrap.main-wrap-s
+        h3.title-hr
           | WORKS
         ul
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             figure
-              img(src='assets/img/work-3.jpg')
-            figcaption
-              .title
-                h4 雅詩蘭黛-雙11活動網頁
-                .data 2019
-              p 雅詩蘭黛雙11活動，負責網頁切版，使用JQuery/ Pug/ Sass製作網頁。
-          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
-            figure
-              img(src='assets/img/work-4.jpg')
-            figcaption
-              .title
-                h4 危老都更博覽會網站
-                .data 2019
-              p 第一屆危老都更博覽會網站，負責網站切版(協作)，使用JQuery/ Bootsratp/ Pug/ Sass。
-          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
-            figure
               img(src='assets/img/work-1-1.jpg')
-            figcaption
-              .title
-                h4 悠遊卡記名網站
-                .data 2019
-              p 網站改版，負責網頁全站切版，使用JQuery/ Bootsratp/ Pug/ Sass，表單使用Javascript驗證。
+              figcaption
+                .content
+                  h4 悠遊卡記名網站
+                  //- p JQuery/ Bootsratp/ Pug/ Sass，表單使用Javascript驗證。
+            h4.title-text 悠遊卡記名網站
+            .descript
+              .tag WEB
+              .descript-text 前端開發
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             figure
               img(src='assets/img/work-5-1.jpg')
-            figcaption
-              .title
-                h4 商業週刊-APP介紹網頁
-                .data 2019
-              p 商業週刊APP介紹與宣傳網頁，負責網頁切版，使用JQuery/ Bootsratp/ Pug/ Sass，Javascript製作動態效果。
+              figcaption
+                .content
+                  h4 商業週刊-APP介紹網頁
+                  //- p 商業週刊APP介紹與宣傳網頁，負責網頁切版，使用JQuery/ Bootsratp/ Pug/ Sass，Javascript製作動態效果。
+            h4.title-text 商業週刊-APP介紹網頁
+            .descript
+              .tag WEB
+              .descript-text 前端開發
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              img(src='assets/img/work-4.jpg')
+              figcaption
+                .content
+                  h4 危老都更博覽會網站
+                  //- p JQuery/ Bootsratp/ Pug/ Sass
+            h4.title-text 危老都更博覽會網站
+            .descript
+              .tag WEB
+              .descript-text 前端開發
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             figure
               img(src='assets/img/work-2.jpg')
-            figcaption
-              .title
-                h4 商業周刊官方網站
-                .data 2019
-              p 商業周刊官方網站網站改版，負責網頁全站切版(協作)，使用JQuery/ Bootsratp/ Pug/ Sass，Javascript製作動態效果。
-
+              figcaption
+                .content
+                  h4 商業周刊官方網站
+                  //- p 商業周刊官方網站網站改版，負責網頁全站切版(協作)，使用JQuery/ Bootsratp/ Pug/ Sass，Javascript製作動態效果。
+            h4.title-text 商業周刊官方網站
+            .descript
+              .tag WEB
+              .descript-text 前端開發
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              img(src='assets/img/work-3.jpg')
+              figcaption
+                .content
+                  h4 雅詩蘭黛-雙11活動網頁
+                  p JQuery/ Pug/ Sass
+            h4.title-text 雅詩蘭黛-雙11活動網頁
+            .descript
+              .tag WEB
+              .descript-text 前端開發
+              
 
 block pages-js
   script(src='assets/js/module/anime.min.js')

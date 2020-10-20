@@ -22,8 +22,6 @@
  **
 
 header
-//#aboutLink
-//  display: none
 
 /**
  **
@@ -32,17 +30,14 @@ header
  **
 
 main
-  //*
-  //  border: solid 1px #fff
 
-// == main =====
-#main
-  // overflow: hidden
+// == visual =====
+#visual
   padding: 12px 0 48px 0
   background-color: $primeColor
   position: relative
+  // overflow-x: hidden
   .hr-circle
-    // margin-top: -12px
     position: absolute
     left: 0
     bottom: -12px
@@ -55,22 +50,20 @@ main
     z-index: 1
   .bg-circles
     position: relative
-    left: 50%
-    // transform: translateX(-48%)
+    // left: 50%
     height: 496px
     background-image: url("../img/circle-lines.svg")
     background-repeat: no-repeat
     background-size: auto 376px
-    background-position: calc(50% - 30px) center
+    background-position: calc(50% + 4px) center
     // animation: bg-circle 4s infinite
-    transform: translateX(-48%)
+    // transform: translateX(-48%)
     overflow-x: hidden
   .circle-block
     position: absolute
     top: 127px
     left: 0
     width: 100%
-    // height: 650px
     .fluid
       position: absolute
       top: -40px
@@ -80,7 +73,6 @@ main
       background: #ffffff
       border-radius: 100%
       animation: rotate 30s infinite
-      // box-shadow: 0 0 40px rgba(0,0,0,0.6)
       opacity: 0.9
     .circle-logo
       position: absolute
@@ -89,8 +81,6 @@ main
       width: 160px
       transform: translateX(-50%)
   .explore
-    // position: absolute
-    // bottom: 0
     left: 50%
     transform: translateX(-50%)
     display: inline-block
@@ -103,21 +93,6 @@ main
     p
       color: $light-blue
       font-size: 0.75rem
-  @include breakpoint($md-up)
-
-@keyframes bg-circle
-  0%
-    transform: translateX(-48%) translateY(0) scale(1)
-  50%
-    transform: translateX(-48%) translateY(-2px) scale(1.005)
-  100%
-    transform: translateX(-48%) translateY(0) scale(1)
-
-@keyframes  rotate
-  0%
-    transform: rotate(0deg)
-  100%
-    transform: rotate(359deg)
 
 @keyframes updown
   0%
@@ -164,134 +139,19 @@ main
       width: 50%
       padding-left: 24px
 
-  // .bg-cat
-  //   position: absolute
-  //   top: -160px
-  //   left: 50%
-  //   transform: translateX(-50%)
-  //   width: 260px
-  //   height: 300px
-  //   background-image: url("../img/bg-cat.svg")
-  //   background-repeat: no-repeat
-  //   background-size: contain
-  //   background-position: center top
-  //   opacity: 0.2
-  // .intro
-  //   position: relative
-  //   max-width: 660px
-  //   padding: 24px 40px 40px 40px
-  //   border: solid 1px rgba(0,0,0,0.1)
-  //   box-shadow: 0 0 40px 10px rgba(0,0,0,0.6)
-  //   margin: 140px auto 80px auto
-  //   background-color: $blue
-  //   .text-wrapper
-  //     position: relative
-  //     display: block
-  //     padding-top: 0.2em
-  //     padding-right: 0.05em
-  //     padding-bottom: 0.1em
-  //     overflow: hidden
-  //     margin: 16px 0 24px 0
-  //   .letter
-  //     display: inline-block
-  //     line-height: 1em
-  //     translateY: ["1.65em", 0]
-  //   p
-  //     font-size: 1.25rem
-  //     line-height: 2.25rem
-  //     font-weight: 300
-  //     text-align: center
-  //     color: $white8
-  //     padding-bottom: 16px
-  //   .highlight
-  //     color: $light-blue
-  //     padding: 0 8px
-  //   .hand
-  //     position: absolute
-  //     width: 36px
-  //     height: 28px
-  //     border-radius: 10px 10px 20px 20px
-  //     border: solid 2px rgba(118,226,229,0.2)
-  //     background-color: $blue
-  //     box-shadow: 0 4px 8px 0px rgba(0,0,0,0.4)
-  //     &.hand-l
-  //       top: -10px
-  //       left: calc(50% - 150px)
-  //       transform: rotate(-12deg)
-  //     &.hand-r
-  //       top: -10px
-  //       left: calc(50% + 105px)
-  //       transform: rotate(12deg)
-  @include breakpoint($sm-up)
-    // .bg-cat
-    //   top: -210px
-    //   width: 360px
-    //   height: 400px
-    // .intro
-    //   .text-wrapper
-    //     margin: 32px 0 28px 0
-    //   .hand
-    //     width: 46px
-    //     height: 32px
-    //     &.hand-l
-    //       top: -10px
-    //       left: 130px
-    //     &.hand-r
-    //       top: -10px
-    //       left: 476px
-
-
-// == skills =====
-// #skills
-//   background-color: $dark-blue
-//   padding: 60px 0
-//   ul
-//     max-width: 800px
-//     margin: 0 auto
-//     padding-top: 20px
-//     li
-//       &.skill-content
-//         max-width: 480px
-//         display: block
-//         width: 100%
-//         padding: 24px 0
-//         margin: 0 auto
-//       figure
-//         display: inline-block
-//         width: 110px
-//         height: auto
-//         margin: 0 auto
-//         vertical-align: top
-//         img
-//           width: 100%
-//       figcaption
-//         display: inline-block
-//         margin-left: 8px
-//         width: calc(100% - 156px)
-//         text-align: center
-//       p
-//         color: $white6
-//   @include breakpoint($sm-up)
-//     ul
-//       li
-//         &.skill-content
-//           display: inline-block
-//           vertical-align: top
-//           width: calc(50% - 2px)
-//           padding: 24px 0
-//           &:nth-of-type(odd)
-//             padding: 24px 0 0
-//         figure
-//           display: inline-block
-//           height: auto
-//         figcaption
-//           display: inline-block
-//           margin-left: 24px
-
 
 // == works =====
 #works
-  padding: 60px 0
+  padding: 120px 0
+  .title-hr
+    padding-bottom: 32px
+    &::after
+      content: ""
+      display: block
+      width: 100%
+      height: 10px
+      background: url("../img/hr-color-s.png") no-repeat center center
+      
   ul
     margin: 0 auto
     padding-top: 40px
@@ -299,57 +159,87 @@ main
     width: 100%
     column-count: 2
     column-width: 340px
-    column-gap: 20px
+    column-gap: 32px
     li
       &.work-content
+        margin-bottom: 24px
         break-inside: avoid
-        // box-shadow: 2px 0 10px rgba(0, 0, 0, .5)
-        // background-color: $dark-blue
-        //max-width: 480px
-        //display: block
-        //width: 100%
-        margin: 24px auto
-        border-radius: 5px
+        margin: 32px auto
+        // border-radius: 5px
         overflow: hidden
         vertical-align: top
         &:first-of-type
           margin-top: 0
       figure
+        position: relative
         display: block
         margin: 0 auto
         vertical-align: top
+        overflow: hidden
+        border: 1px solid #eeeeee
+        cursor: pointer
+        &:hover
+          img
+            transform: scale(1.1)
+          // figcaption
+          //   opacity: 1
+          //   height: 100%
         img
           width: 100%
-      figcaption
-        display: block
-        text-align: center
-        padding: 8px 16px 24px 16px
-        .data
+          transition: .3s
+        figcaption
           position: absolute
-          right: 0
-          top: 50%
-          transform: translateY(-50%)
-          color: $light-blue
-      p
-        color: #333333
-      h4
-        color: #333333
-        padding-right: 50px
-  //@include breakpoint($sm-up)
-  //  ul
-  //    li
-  //      &.work-content
-  //
-  //        display: inline-block
-  //        width: calc((100% / 3) - 27px)
-  //        margin: 12px
-
-//.hr-lines
-//  width: 100%
-//  height: 270px
-//  background: url("../img/bg-lines.svg") left top no-repeat
-//  background-size: 100% 100%
-
+          display: flex
+          justify-content: center
+          align-items: center
+          top: 0
+          left: 0
+          width: 100%
+          height: 0
+          background-color: $black8
+          padding: 24px 48px
+          opacity: 0
+          // transform: translateY(-100%)
+          transition: .3s
+          .content
+        p
+          color: #ffffff
+          font-weight: lighter
+          line-height: 1.5rem
+          letter-spacing: 1px
+        h4
+          font-weight: 300
+          text-align: center
+          color: #ffffff
+          padding-bottom: 32px
+      .title-text
+        padding: 24px 0 0 0
+        font-size: 1.25rem
+        text-align: center
+        font-weight: 200
+      .descript
+        padding: 0 0 8px 0
+        display: flex
+        justify-content: center
+        align-items: self-start
+        .tag
+          padding: 0 12px
+          margin: 12px
+          font-size: 0.875rem
+          // color: #dddddd
+          color: $primeColor
+          letter-spacing: 1px
+          font-weight: lighter
+          line-height: 0.875rem
+          // border-radius: 16px
+          // border: solid 1px #dddddd
+          border-right: solid 1px #eeeeee
+        .descript-text
+          font-size: 0.875rem
+          color: #4A4A4A
+          letter-spacing: 1px
+          font-weight: lighter
+          padding: 8px 12px 8px 4px
 
 /**
  **
