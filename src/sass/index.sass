@@ -33,10 +33,11 @@ main
 
 // == visual =====
 #visual
-  padding: 12px 0 48px 0
+  padding: 0 0 120px 0
   background-color: $primeColor
   position: relative
-  // overflow-x: hidden
+  @include breakpoint($md-up)
+    padding: 12px 0 48px 0
   .hr-circle
     position: absolute
     left: 0
@@ -83,9 +84,11 @@ main
   .explore
     left: 50%
     transform: translateX(-50%)
-    display: inline-block
+    display: none
     text-align: center
     font-size: 0.7rem
+    @include breakpoint($md-up)
+      display: inline-block
     .arrow-down
       width: 24px
       margin-bottom: 10px
@@ -114,13 +117,18 @@ main
     left: 0
     top: -72px
     z-index: 1
+    margin-left: 24px
     .avatar-img
       width: 100%
       overflow: hidden
       border-radius: 100%
       border: solid 3px $white8
+    @include breakpoint($md-up)
+      margin-left: 0
   .about-row
-    padding: 180px 0
+    padding: 140px 0
+    @include breakpoint($md-up)
+      padding: 180px 0
     .intro
       width: 100%
       padding-right: 24px
