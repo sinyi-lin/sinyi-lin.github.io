@@ -9,7 +9,7 @@ block pages-css
 
 block content
   main
-    h1 Sinyi-Creative Develop
+    h1 LIN SIN YI PORTFOLIO 
 
     // == MAIN =====
     article#main
@@ -21,11 +21,23 @@ block content
           img.circle-logo(src='assets/img/logo-siniy.png')
         .explore
           img.arrow-down(src='assets/img/arrow-down2.svg')
+      .hr-circle
+      
 
     // == ABOUT =====
-    //- article#about
-    //-   section.main-wrap
-    //-     .bg-cat
+    article#about
+      section.main-wrap
+        .avatar
+          img.avatar-img(src='assets/img/sinyi-avatar.png' alt="Sinyi頭像")
+        .row.about-row
+          .intro
+            h2 LIN SIN YI
+            p.intro-text
+              | I was a product and project manager in online website, EC, O2O service,mobile App, RTLS solution. 
+              br
+              br
+              | Have interest in web technologies, Front-enf development, UI/UX design, and become a front-end developer!
+          .skill
     //-     .intro
     //-       .text-wrapper
     //-         h2.letters Hello,I am Sinyi
@@ -88,7 +100,7 @@ block content
     article#works
       section.main-wrap
         h3
-          | Work Collection
+          | WORKS
         ul
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             figure

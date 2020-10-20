@@ -28,19 +28,19 @@ h2, .h2
   font-size: 2.5rem
   line-height: 2.5rem
   font-weight: 900
-  color: #FFF
-  text-align: center
+  color: #333333
+  text-align: left
   padding: 0
   @include breakpoint($sm-up)
-    font-size: 4rem
-    line-height: 4rem
+    font-size: 3rem
+    line-height: 3rem
     padding: 0
 
 h3, .h3
   font-size: 2.5rem
   line-height: 4rem
   font-weight: 900
-  color: #FFF
+  color: #333333
   text-align: center
   padding-bottom: 8px
   @include breakpoint($sm-up)
@@ -135,11 +135,11 @@ header
       transform:  translateX(-50%) translateY(-8px)
   &.scrolled
     position: fixed
-    background-color: $dark-blue8
+    background-color: $black6
     .logo
       display: block
   &.opened
-    background-color: $dark-blue
+    background-color: $black6
     .logo
       display: block
     .btn-menu
@@ -155,7 +155,7 @@ header
     .header-wrap
       padding: 0 40px
   @include breakpoint($md-up)
-    background-color: $blue
+    background-color: $primeColor
   @include breakpoint($lg-up)
     .header-wrap
       padding: 0
@@ -187,7 +187,7 @@ nav
       &:hover,&:active
         background-color: $white1
         a
-          color: $light-blue
+          color: $primeColor
   @include breakpoint($md-up)
     display: block
     position: relative
@@ -209,7 +209,7 @@ nav
         > a
           line-height: 60px
           color: $white6
-          font-size: 0.8rem
+          font-size: 0.875rem
           &::before
             content: ''
             position: absolute
@@ -218,12 +218,12 @@ nav
             width: 0
             height: 2px
             border-radius: 2px
-            background-color: $light-blue
+            background-color: #ffffff
             transition: .25s
         &:hover, &.active
           background: none
           > a
-            color: $light-blue
+            color: #ffffff
             &::before
               width: 100%
         &:not(:last-child)
