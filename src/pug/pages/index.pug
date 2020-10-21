@@ -33,7 +33,7 @@ block content
           .intro
             h2.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s") 林欣儀 LIN SIN YI
             p.intro-text.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
-              | 曾任職於網路廣告公司與軟體專案公司，負責網站/App等軟體專案管理與執行、跨部門溝通、WireFrame/UI Flow/Prototype等UI/UX規劃、視覺設計、制定電子商務系統流程，並針對公司目標進行策略擬定，結合各部門資源完成需求。
+              | 曾任職於網路廣告公司與軟體專案公司，負責網站/App等軟體專案管理與執行、跨部門溝通、WireFrame/UI Flow/Prototype等UI/UX規劃、視覺設計、制定電子商務系統流程，建置WordPress網站，並針對公司目標進行策略擬定，結合各部門資源完成需求。
               br
               br
               | 十分享受規劃網站動線、進而製作成可以與使用者互動的網站/APP所帶來的成就感，讓我對前端開發產生很大的興趣，進而精進前端技能，開始了前端工程師之路。
@@ -65,6 +65,8 @@ block content
                   | jQuery/Bootstrap
                   br
                   | Webpack
+                  br
+                  | WordPress
               li.skill-list-item
                 .skill-list-item-title Version Control
                 .skill-list-item-content Git
@@ -123,10 +125,10 @@ block content
           | WORKS
         ul
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
-            a(href='https://wallet.friday.tw/home/' target='_blank' title='遠傳Friday理財+')
-              figure
-                img(src='assets/img/works-friday57.jpg')
-            h4.title-text 遠傳Friday理財+網站
+            figure
+              a(href='https://www.businessweekly.com.tw/' target='_blank' title='商業周刊官方網站')
+                img(src='assets/img/works-bw.jpg')
+            h4.title-text 商業周刊官方網站
             .descript
               .tag WEB
               .descript-text 前端開發
@@ -139,10 +141,10 @@ block content
               .tag WEB
               .descript-text 前端開發
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
-            figure
-              a(href='https://www.businessweekly.com.tw/bwplus/landingpage/' target='_blank' title='商業週刊-APP介紹網頁')
-                img(src='assets/img/works-bw-app.jpg')
-            h4.title-text 商業週刊-APP介紹網頁
+            a(href='https://wallet.friday.tw/home/' target='_blank' title='遠傳Friday理財+')
+              figure
+                img(src='assets/img/works-friday57.jpg')
+            h4.title-text 遠傳Friday理財+網站
             .descript
               .tag WEB
               .descript-text 前端開發
@@ -161,20 +163,19 @@ block content
             .descript
               .tag WEB
               .descript-text 前端開發
-          
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             figure
-              a(href='https://www.wealth.com.tw/safehouse1/' target='_blank' title='第一屆危老都更博覽會網站')
-                img(src='assets/img/works-safehouse.jpg')
-            h4.title-text 第一屆危老都更博覽會網站
+              a(href='https://www.businessweekly.com.tw/bwplus/landingpage/' target='_blank' title='商業週刊-APP介紹網頁')
+                img(src='assets/img/works-bw-app.jpg')
+            h4.title-text 商業週刊-APP介紹頁
             .descript
               .tag WEB
               .descript-text 前端開發
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             figure
-              a(href='https://www.businessweekly.com.tw/' target='_blank' title='商業周刊官方網站')
-                img(src='assets/img/works-bw.jpg')
-            h4.title-text 商業周刊官方網站
+              a(href='https://www.wealth.com.tw/safehouse1/' target='_blank' title='第一屆危老都更博覽會網站')
+                img(src='assets/img/works-safehouse.jpg')
+            h4.title-text 第一屆危老都更博覽會網站
             .descript
               .tag WEB
               .descript-text 前端開發
@@ -253,20 +254,13 @@ block content
             .descript
               .tag WEB
               .descript-text 專案管理/UX規劃/Wordpress網站建置
-          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
-            figure
-              img(src='assets/img/works-woo1.jpg')
-            h4.title-text 活動宣傳 Banner 
-            .descript
-              .tag Design
-              .descript-text 視覺設計
-          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
-            figure
-              img(src='assets/img/works-hatefood.jpg')
-            h4.title-text 厭食單字卡設計
-            .descript
-              .tag Design
-              .descript-text 視覺設計
+          //- li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+          //-   figure
+          //-     img(src='assets/img/works-hatefood.jpg')
+          //-   h4.title-text 厭食單字卡設計
+          //-   .descript
+          //-     .tag Design
+          //-     .descript-text 視覺設計
           li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
             figure
               img(src='assets/img/works-paint.jpg')
@@ -295,6 +289,13 @@ block content
             .descript
               .tag Design
               .descript-text 電腦繪圖
+          li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
+            figure
+              img(src='assets/img/works-woo1.jpg')
+            h4.title-text 活動宣傳 Banner 
+            .descript
+              .tag Design
+              .descript-text 視覺設計
           //- li.work-content.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s")
           //-   figure
           //-     img(src='assets/img/work-3.jpg')
