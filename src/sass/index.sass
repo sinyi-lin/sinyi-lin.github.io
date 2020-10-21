@@ -41,19 +41,19 @@ main
   .hr-circle
     position: absolute
     left: 0
-    bottom: -12px
+    bottom: -18px
     width: 100%
     height: 36px
     background-image: url("../img/bg-color.png")
     background-repeat: repeat-x
-    background-size: auto
+    background-size: 450px auto
     background-position: left bottom
     z-index: 1
   .bg-circles
     position: relative
     // left: 50%
     height: 496px
-    background-image: url("../img/circle-lines.svg")
+    background-image: url("../img/circle-lines.png")
     background-repeat: no-repeat
     background-size: auto 376px
     background-position: calc(50% + 4px) center
@@ -74,7 +74,7 @@ main
       background: #ffffff
       border-radius: 100%
       animation: rotate 30s infinite
-      opacity: 0.9
+      // opacity: 0.9
     .circle-logo
       position: absolute
       top: 46px
@@ -111,6 +111,7 @@ main
   position: relative
   background-color: $lightGray
   background-image: url("../img/bg-corner.png")
+  background-size: 180px auto
   background-repeat: no-repeat
   background-position: bottom right
 
@@ -231,6 +232,7 @@ main
           margin-top: 0
       @include breakpoint($sm-up)
         width: 50%
+        padding: 24px
       figure
         position: relative
         display: block
